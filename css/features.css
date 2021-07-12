@@ -1,0 +1,102 @@
+* {
+  font-family: "Roboto", sans-serif;
+
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+}
+
+body {
+  width: 90%;
+}
+h1 {
+  font-size: 82px;
+  color: #f4592f;
+}
+p {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: regular;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+
+#imagediv1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../img/gallery1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imagediv2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../img/gallery2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imagediv3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../img/gallery3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 4fr;
+  place-items: center;
+  gap: 10px;
+  border-bottom: 2px solid black;
+  line-height: 1.4;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin-top: 5%;
+  }
+  .title {
+    text-align: center;
+  }
+}
